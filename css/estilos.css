@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-nav {
+:root {
+    --color-bg: #121212;
+    --color-section: #1e1e1e;
+    --color-aside: #2a2a2a;
+    --color-accent: #00bcd4;
+    --color-text: #f1f1f1;
+    --color-subtext: #cccccc;
+    --radius: 10px;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+nav-global {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,11 +32,76 @@ nav {
     z-index: 100;
 }
 
-nav ul li {
+nav-global ul li {
     list-style-type: none;
 }
 
-.main-nav a.activo {
+.nav-global a.activo {
     color: #00bcd4;
     border-bottom: 2px solid #00bcd4;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    align-items: start;
+}
+
+main.inicio section {
+    grid-column: 1;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+main.inicio section + section {
+    margin-top: 20px;
+}
+
+main.inicio aside {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: start;
+    position: sticky;
+    top: 20px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.95em;
+}
+
+section {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main.inicio section h2,
+main.inicio section h3,
+main.inicio section p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+aside {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.95em;
+}
+
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        order: 2;
+    }
+}
+
