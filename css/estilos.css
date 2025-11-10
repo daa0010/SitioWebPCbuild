@@ -38,6 +38,7 @@ h1 {
 h2, h3, h4 {
     color: var(--color-accent);
     margin-bottom: 10px;
+    text-align: center;
 }
 
 ul {
@@ -82,9 +83,12 @@ ul {
 
 .nav-local {
     margin-top: 20px;
+    margin-left: 0px;
+    position: sticky;
 }
 
 .nav-local ul {
+    padding-left: 0px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -114,23 +118,45 @@ section {
     padding: 20px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    grid-column: 1;
     margin-bottom: 0;
 }
 
 section h2, section h3, section h4, section p {
-    margin-top: 0;
+    margin-top: 15px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .mi-tabla {
     border-collapse: collapse;
     width: 100%;
 }
+
 .mi-tabla th, .mi-tabla td {
     border: 1px solid #ccc;
     padding: 8px;
     vertical-align: middle;
+}
+
+.tiendas {
+    text-align: center;
+    margin-left: 0px;
+}
+
+.tiendas ul {
+    padding-left: 0px;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.tiendas a {
+    text-decoration: none;
+    color: var(--color-subtext);
+}
+
+.tiendas a:hover {
+    color: var(--color-accent);
 }
 
 
@@ -144,6 +170,7 @@ aside {
     top: 20px;
     align-self: start;
     position: sticky;
+
 }
 
 footer {
@@ -155,7 +182,7 @@ footer {
     font-size: 0.9em;
 }
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -164,5 +191,5 @@ footer {
         position: static;
         margin-top: 20px;
     }
-}
+}*/
 
