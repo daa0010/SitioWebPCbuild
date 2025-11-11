@@ -80,6 +80,7 @@ ul {
 }
 
 .nav-global a {
+
     text-decoration: none;
     color: var(--color-text);
     font-weight: 500;
@@ -98,20 +99,43 @@ ul {
 /* Nav local */
 
 .nav-local {
-    margin-top: 20px;
-    margin-left: 0px;
-    position: sticky;
+    grid-column: 1;
+    position: fixed;
+    top: 265px;
+    align-self: start;
+    background: var(--color-aside);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    height: fit-content;
+    transform: translateX(-80px);
+    transition: transform 0.4s ease;
+    width: 140px;
+    font-size: 14px;
+    z-index: 10;
+    left: -20px;
+}
+
+.nav-local:hover {
+    transform: translateX(0);
+    padding-left: 25px;
 }
 
 .nav-local ul {
-    padding-left: 0px;
-    display: flex;
+    margin-left: 0;
     justify-content: center;
+    text-align: center;
+    padding-left: 0px;
     gap: 20px;
     list-style: none;
 }
 
+.nav-local li {
+    margin-bottom: 12px;
+}
+
 .nav-local a {
+
     text-decoration: none;
     color: var(--color-subtext);
 }
@@ -124,11 +148,15 @@ ul {
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:0fr 2fr 1fr;
     gap: 20px;
     width: 90%;
     margin: 0 auto;
     align-items: start;
+}
+
+main > div {
+    grid-column: 2;
 }
 
 /* Sections */
@@ -186,7 +214,7 @@ section h2, section h3, section h4, section p {
 /* Aside */
 
 aside {
-    grid-column: 2;
+    grid-column: 3;
     background-color: var(--color-aside);
     padding: 20px;
     border-radius: var(--radius);
