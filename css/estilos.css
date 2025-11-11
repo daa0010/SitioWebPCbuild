@@ -1,8 +1,12 @@
+/* Recursos */
+
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
 }
+
+/* Estilos */
 
 :root {
     --color-bg: #121212;
@@ -15,6 +19,8 @@
     --shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+/* Body */
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -23,10 +29,14 @@ body {
     padding-top: 100px;
 }
 
+/* Header */
+
 header {
     text-align: center;
     padding-bottom: 1rem;
 }
+
+/* Títulos */
 
 h1 {
     font-family: 'Orbitron', sans-serif;
@@ -41,10 +51,14 @@ h2, h3, h4 {
     text-align: center;
 }
 
+/* Listas */
+
 ul {
     margin-top: 10px;
     margin-left: 20px;
 }
+
+/* Nav global */
 
 .nav-global {
     position: fixed;
@@ -81,6 +95,8 @@ ul {
     border-bottom: 2px solid var(--color-accent);
 }
 
+/* Nav local */
+
 .nav-local {
     margin-top: 20px;
     margin-left: 0px;
@@ -104,6 +120,8 @@ ul {
     color: var(--color-accent);
 }
 
+/* Main */
+
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -113,12 +131,14 @@ main {
     align-items: start;
 }
 
+/* Sections */
+
 section {
     background-color: var(--color-section);
     padding: 20px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 section h2, section h3, section h4, section p {
@@ -126,6 +146,8 @@ section h2, section h3, section h4, section p {
     margin-bottom: 10px;
     text-align: center;
 }
+
+/* Tablas */
 
 .mi-tabla {
     border-collapse: collapse;
@@ -137,6 +159,8 @@ section h2, section h3, section h4, section p {
     padding: 8px;
     vertical-align: middle;
 }
+
+/* Tiendas */
 
 .tiendas {
     text-align: center;
@@ -159,6 +183,7 @@ section h2, section h3, section h4, section p {
     color: var(--color-accent);
 }
 
+/* Aside */
 
 aside {
     grid-column: 2;
@@ -170,8 +195,11 @@ aside {
     top: 20px;
     align-self: start;
     position: sticky;
-
+    height: 55rem;
+    overflow-y: scroll;
 }
+
+/* Footer */
 
 footer {
     text-align: center;
@@ -182,14 +210,25 @@ footer {
     font-size: 0.9em;
 }
 
-/* @media (max-width: 900px) {
-    main {
-        grid-template-columns: 1fr;
-    }
+/* Scrollbar */
 
-    aside {
-        position: static;
-        margin-top: 20px;
-    }
-}*/
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00bcd4 #242323;
+}
 
+/* Chrome, Edge, y Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #242323;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #00bcd4;
+    border-radius: 4px;
+    border: 0px solid #ffffff;
+}
