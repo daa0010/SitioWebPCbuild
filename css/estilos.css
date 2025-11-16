@@ -275,14 +275,40 @@ details[open] {
 /* Tablas */
 
 .mi-tabla {
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-section);
+    color: var(--color-text);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    overflow: hidden;
 }
 
-.mi-tabla th, .mi-tabla td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    vertical-align: middle;
+.mi-tabla th,
+.mi-tabla td {
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.mi-tabla thead {
+    background-color: rgba(0, 188, 212, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mi-tabla tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.mi-tabla tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mi-tabla tfoot td {
+    background-color: rgba(0, 188, 212, 0.1);
+    font-weight: bold;
 }
 
 /* Tiendas */
