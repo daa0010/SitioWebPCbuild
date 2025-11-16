@@ -15,11 +15,10 @@
     <nav class="nav-global">
         <ul>
             <li><a href="index.html" class="activo">Inicio</a></li>
-            <li><a href="configuradorpc.html">Configuración PC</a></li>
+            <li><a href="configuradorpc.html">Configurador PC</a></li>
             <li><a href="montajepc.html">Montaje PC</a></li>
         </ul>
     </nav>
-
 
 
 </header>
@@ -68,8 +67,15 @@
                 <h4>Procesador (CPU)</h4>
                 <p>El procesador o Unidad Central de Procesamiento (CPU) es el cerebro del ordenador.
                     Ejecuta las instrucciones de los programas y coordina las operaciones del sistema.
-                    Su velocidad se mide en gigahercios (GHz) y determina, junto con otros factores, el rendimiento
+                    Su velocidad se mide en gigahercios (GH<sub>z</sub>) y determina, junto con otros factores, el rendimiento
                     general.</p>
+                <details>
+                    <summary>Más información sobre compatibilidad de CPU</summary>
+                    <p>Para instalar correctamente una CPU, debes verificar el socket de la placa base, la generación
+                        del procesador, y la compatibilidad con la RAM. Por ejemplo, un Ryzen 5 5600G requiere socket
+                        AM4 y soporte DDR<sub>4</sub>.</p>
+                </details>
+
             </article>
             <article>
                 <h4>Tarjeta gráfica (GPU)</h4>
@@ -86,17 +92,26 @@
             <article>
                 <h4>Memoria RAM</h4>
                 <p>La memoria de acceso aleatorio (RAM) almacena temporalmente los datos que el sistema necesita de
-                    forma
-                    inmediata.
-                    Cuanta más RAM tenga un equipo, más programas podrá ejecutar a la vez sin ralentizarse.</p>
+                    forma inmediata.
+                    Cuanta más RAM tenga un equipo, más programas podrá ejecutar a la vez sin ralentizarse.
+                    Puede tener compatibilidad con DDR<sub>4</sub> y DDR<sub>5</sub>. Velocidades hasta 6000
+                    MHz<sup>+</sup>.
+                </p>
             </article>
             <article>
                 <h4>Almacenamiento (SSD/HDD)</h4>
                 <p>Es donde se guardan los datos permanentemente.</p>
                 <ul>
                     <li>HDD: discos duros tradicionales, más baratos pero más lentos.</li>
-
+                    <ul>
+                        <li>2.5" SATA</li>
+                        <li>3.5" SATA</li>
+                    </ul>
                     <li>SSD: unidades de estado sólido, mucho más rápidas y silenciosas.</li>
+                    <ul>
+                        <li>SATA SSD</li>
+                        <li>M.2 NVMe</li>
+                    </ul>
                 </ul>
 
             </article>
@@ -129,7 +144,7 @@
             <li><strong>Overclock:</strong> Aumentar la frecuencia de la CPU o GPU para mejorar el rendimiento.</li>
             <li><strong>Socket:</strong> Tipo de conexión entre el procesador y la placa base.</li>
             <li><strong>RGB:</strong> Sistema de iluminación basado en los colores rojo, verde y azul.</li>
-            <li><strong>Latencia:</strong> Tiempo que tarda un componente (como la RAM) en responder a una
+            <li><strong>Latencia:</strong> Tiempo que tarda un componente (<em>como la RAM</em>) en responder a una
                 solicitud.
             </li>
             <li><strong>TDP:</strong> Cantidad máxima de calor que un componente puede disipar bajo carga.</li>
@@ -142,29 +157,32 @@
             <li><strong>RPM:</strong> Revoluciones por minuto de los ventiladores.</li>
             <li><strong>Undervolt: </strong> Técnica que consiste en reducir el voltaje de operación de componentes
                 como
-                procesadores (CPU) o tarjetas gráficas (GPU) para disminuir su consumo energético, la temperatura y
+                procesadores (<em>CPU</em>) o tarjetas gráficas (<em>GPU</em>) para disminuir su consumo energético, la
+                temperatura y
                 el
                 desgaste, sin que se pierda rendimiento.
             </li>
-            <li><strong>Bottleneck (cuello de botella):</strong> cuando un componente limita el rendimiento de otro.
+            <li><strong>Bottleneck (<em>cuello de botella</em>):</strong> cuando un componente limita el rendimiento de
+                otro.
             </li>
-            <li><strong>Chipset:</strong> Controla la comunicación entre:
+            <li><strong>Chipset:</strong> Controla la comunicación entre CPU, RAM y periféricos.
                 <ul>
                     <li>CPU</li>
                     <li>RAM</li>
                     <li>Periféricos</li>
                 </ul>
             </li>
-            <li><strong>PCIe:</strong> Interfaz de alta velocidad usada para conectar tarjetas gráficas y otros
+            <li><strong>PCI<sub>e</sub>:</strong> Interfaz de alta velocidad usada para conectar tarjetas gráficas y
+                otros
                 dispositivos.
             </li>
             <li><strong>SATA:</strong> Conexión estándar para discos duros y SSDs.</li>
-            <li><strong>M.2 / NVMe:</strong> Formatos modernos de conexión para SSDs ultrarrápidos.</li>
+            <li><strong>M.2 / NVM<sub>e</sub>:</strong> Formatos modernos de conexión para SSDs ultrarrápidos.</li>
             <li><strong>eATX / ATX / Micro-ATX / ITX:</strong> Formatos de tamaño de placa base y caja.</li>
             <li><strong>Thermal Pad:</strong> Almohadilla térmica usada como alternativa a la pasta térmica.</li>
             <li><strong>80 PLUS:</strong> Certificación de eficiencia energética para fuentes de alimentación.</li>
             <li><strong>Modular:</strong> Fuente de alimentación con cables desmontables.</li>
-            <li><strong>Watt (Vatio):</strong> Unidad que mide la potencia eléctrica.</li>
+            <li><strong>Watt (<em>Vatio</em>):</strong> Unidad que mide la potencia eléctrica.</li>
             <li><strong>Thermal Pad:</strong> Almohadilla térmica usada como alternativa a la pasta térmica.</li>
             <li><strong>Fan Curve:</strong> Curva de velocidad personalizada de ventiladores según temperatura.</li>
             <li><strong>Dual Channel:</strong> Configuración de RAM que duplica el ancho de banda al usar dos
@@ -173,15 +191,17 @@
             <li><strong>Intel XMP / AMD EXPO:</strong> Perfil automático para ajustar la frecuencia y voltaje de la
                 RAM.
             </li>
-            <li><strong>VRM (Voltage Regulator Module):</strong> Regula el voltaje que llega a la CPU o GPU; clave
+            <li><strong>VRM (<em>Voltage Regulator Module</em>):</strong> Regula el voltaje que llega a la CPU o GPU;
+                clave
                 para
                 estabilidad y overclock.
             </li>
-            <li><strong>Chip gráfico integrado (iGPU):</strong> GPU integrada en el procesador, útil si no hay
+            <li><strong>Chip gráfico integrado (<em>iGPU</em>):</strong> GPU integrada en el procesador, útil si no hay
                 tarjeta
                 dedicada.
             </li>
-            <li><strong>Backplate:</strong> Placa trasera (en GPU o CPU cooler) que da soporte estructural y mejora
+            <li><strong>Backplate:</strong> Placa trasera (<em>en GPU o CPU cooler</em>) que da soporte estructural y
+                mejora
                 la
                 refrigeración.
             </li>
@@ -189,28 +209,30 @@
                 placa
                 base.
             </li>
-            <li><strong>CL (CAS Latency):</strong> Tiempo que tarda la RAM en responder a una instrucción.</li>
-            <li><strong>MHz (Megahercios):</strong> Velocidad de reloj de la memoria o del procesador.</li>
-            <li><strong>AIO (All-In-One):</strong> Sistema de refrigeración líquida preensamblado para CPU o GPU.
+            <li><strong>CL (<em>CAS Latency</em>):</strong> Tiempo que tarda la RAM en responder a una instrucción.</li>
+            <li><strong>MHz (<em>Megahercios</em>):</strong> Velocidad de reloj de la memoria o del procesador.</li>
+            <li><strong>AIO (<em>All-In-One</em>):</strong> Sistema de refrigeración líquida preensamblado para CPU o
+                GPU.
             </li>
             <li><strong>Custom Loop:</strong> Sistema de refrigeración líquida montado a medida.</li>
             <li><strong>Push/Pull:</strong> Configuración de ventiladores en la que unos empujan aire y otros lo
                 extraen
                 para optimizar el flujo.
             </li>
-            <li><strong>CFM (Cubic Feet per Minute):</strong> Cantidad de aire que mueve un ventilador.</li>
+            <li><strong>CFM (<em>Cubic Feet per Minute</em>):</strong> Cantidad de aire que mueve un ventilador.</li>
             <li><strong>Drivers:</strong> Controladores que permiten al sistema operativo comunicarse con el
                 hardware.
             </li>
             <li><strong>Firmware:</strong> Software básico que controla el hardware directamente.</li>
             <li><strong>Flashear BIOS:</strong> Actualizar el firmware de la placa base.</li>
-            <li><strong>Núcleos (Cores):</strong> Unidades de procesamiento dentro del CPU.</li>
-            <li><strong>Hilos (Threads):</strong> Tareas que puede ejecutar un núcleo gracias a la multihilación
-                (Hyper-Threading/SMT).
+            <li><strong>Núcleos (<em>Cores</em>):</strong> Unidades de procesamiento dentro del CPU.</li>
+            <li><strong>Hilos (<em>Threads</em>):</strong> Tareas que puede ejecutar un núcleo gracias a la
+                multihilación
+                (<em>Hyper-Threading/SMT</em>).
             </li>
             <li><strong>Cache L1/L2/L3:</strong> Memoria ultrarrápida dentro de la CPU.</li>
             <li><strong>Airflow:</strong> Flujo de aire dentro del gabinete.</li>
-            <li><strong>FPS (Frames per Second):</strong> Imágenes por segundo que genera la GPU.</li>
+            <li><strong>FPS (<em>Frames per Second</em>):</strong> Imágenes por segundo que genera la GPU.</li>
             <li><strong>Dust Filter:</strong> Filtros antipolvo para entradas y salidas de aire.</li>
             <li><strong>Cable Tie / Brida:</strong> Herramienta para organizar cables.</li>
         </ul>
