@@ -326,14 +326,109 @@ aside {
     overflow-y: scroll;
 }
 
+.galeria-montaje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.galeria-montaje img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria-montaje img:hover {
+    transform: scale(1.05);
+}
+
 /* Formulario */
 
-input[type="email"] {
+.formulario {
+    background-color: var(--color-section);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 20px;
+}
+
+.formulario fieldset {
     border: 2px solid var(--color-accent);
-    border-radius: 5px;
-    padding: 5px;
-    background-color: #1e1e1e;
+    border-radius: var(--radius);
+    padding: 20px;
+    position: relative;
+    backdrop-filter: blur(3px);
+}
+
+.formulario legend {
+    padding: 5px 15px;
+    font-weight: bold;
+    color: var(--color-accent);
+    background-color: var(--color-aside);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius);
+    text-shadow: 0 0 8px rgba(0, 188, 212, 0.8);
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    color: var(--color-subtext);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.formulario input {
+    width: 100%;
+    background-color: var(--color-aside);
+    border: 1px solid #444;
     color: var(--color-text);
+    padding: 10px;
+    border-radius: var(--radius);
+    margin-top: 5px;
+    transition: 0.3s ease;
+}
+
+.formulario input:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.6);
+    outline: none;
+}
+
+.formulario input[type="range"] {
+    accent-color: var(--color-accent);
+}
+
+.formulario button {
+    margin-top: 20px;
+    background-color: var(--color-accent);
+    border: none;
+    color: #000;
+    padding: 12px 15px;
+    font-weight: bold;
+    border-radius: var(--radius);
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.formulario button:hover {
+    box-shadow: 0 0 12px rgba(0, 188, 212, 0.9);
+    transform: translateY(-2px);
+}
+
+.formulario input[required] {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.4);
+}
+
+
+.formulario input[required]:focus {
+    box-shadow: 0 0 12px rgba(0, 188, 212, 0.8);
 }
 
 /* Video */
