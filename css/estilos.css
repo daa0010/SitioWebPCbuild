@@ -28,7 +28,7 @@ body {
     background-attachment: fixed;
     color: var(--color-text);
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    line-height: 1.6; 
     padding-top: 100px;
     width: 100%;
     margin: auto;
