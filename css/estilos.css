@@ -302,7 +302,6 @@ details[open] {
     transition: transform 0.3s ease;
 }
 
-
 .inicio section:nth-of-type(3) article img:hover {
     transform: scale(1.05);
 }
@@ -318,7 +317,6 @@ details[open] {
     box-shadow: var(--shadow);
 }
 
-
 #presupuesto article img {
     max-width: 300px;
     height: auto;
@@ -327,7 +325,6 @@ details[open] {
     box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
     transition: transform 0.3s ease;
 }
-
 
 #presupuesto article img:hover {
     transform: scale(1.05);
@@ -418,6 +415,7 @@ aside {
     height: 55rem;
     overflow-y: scroll;
 }
+
 
 .galeria-montaje {
     display: flex;
